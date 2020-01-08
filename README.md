@@ -9,5 +9,5 @@ Table of Contents
 
 * postprocess_germline.py - A python script with post-processing algorithm for filling gaps and filtering on marker counts in merged homozygosity tracts from germline (1.5.1) using --bits 1.
 
-All other supplementary materials are available at ![figshare](https://figshare.com/articles/Supplementary_Material_for_Sams_and_Boyko_2018/7330151)
+All other supplementary materials are available at [figshare](https://figshare.com/articles/Supplementary_Material_for_Sams_and_Boyko_2018/7330151)
 
