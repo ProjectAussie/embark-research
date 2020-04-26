@@ -4,7 +4,7 @@ Repository of code used in Embark publications.
 
 # Table of Contents
 ## 2020
-### Sams, Aaron J, Ford, Brett, Gardner, Adam, and Boyko, Adam R. "Examination of the efficacy of small genetic panels in genomic conservation of companion animal populations." Evolutionary Applications.
+### Sams, Aaron J, Ford, Brett, Gardner, Adam, and Boyko, Adam R. "Examination of the efficacy of small genetic panels in genomic conservation of companion animal populations." Evolutionary Applications. (In revision - ADD METADATA WHEN PUBLISHED)
 
 * `analyze_data_and_make_figures_and_tables.py` - A python (3) (we used 3.7.4 at runtime) script to aggregate and analyze raw data from simulation outputs.
 * `requirements.txt` - List of versions of non-standard library python packages used in `analyze_data_and_make_figures_and_tables.py`
