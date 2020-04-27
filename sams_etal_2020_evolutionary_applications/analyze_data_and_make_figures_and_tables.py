@@ -2360,6 +2360,46 @@ def main(
     )
     make_dir_if_does_not_exist(main_figures_dir)
 
+    # Need to make some data files to go with plotting functions below.
+    # Note: If running this script more than once, can likely comment out this loop since data files will exist already.
+    for generation_end in range(5, 41, 5):
+        make_data_merged_with_dabest_stats_csv(
+            statistic_type="gw_heterozygosity",
+            parameter_set_index_list=PARAMETER_SETS_DICT.keys(),
+            model_type_list=VALID_MODEL_TYPES,
+            data_df=gw_heterozygosity_df,
+            dabest_stat_type="pct_change_between_gens",
+            generation_tuple=(0, generation_end),
+            stats_dir_formatted_for_model_type_list=STATS_DIR_FORMATTED_FOR_MODEL_TYPE_LIST,
+            write_tsv=True,
+            return_df=False,
+            import_csv_instead_of_making=False,
+        )
+        make_data_merged_with_dabest_stats_csv(
+            statistic_type="gw_richness",
+            parameter_set_index_list=PARAMETER_SETS_DICT.keys(),
+            model_type_list=VALID_MODEL_TYPES,
+            data_df=ms_richness_per_individual_df,
+            dabest_stat_type="pct_change_between_gens",
+            generation_tuple=(0, generation_end),
+            stats_dir_formatted_for_model_type_list=STATS_DIR_FORMATTED_FOR_MODEL_TYPE_LIST,
+            write_tsv=True,
+            return_df=False,
+            import_csv_instead_of_making=False,
+        )
+        make_data_merged_with_dabest_stats_csv(
+            statistic_type="coi",
+            parameter_set_index_list=PARAMETER_SETS_DICT.keys(),
+            model_type_list=VALID_MODEL_TYPES,
+            data_df=mean_coi_df,
+            dabest_stat_type="pct_change_between_gens",
+            generation_tuple=(0, generation_end),
+            stats_dir_formatted_for_model_type_list=STATS_DIR_FORMATTED_FOR_MODEL_TYPE_LIST,
+            write_tsv=True,
+            return_df=False,
+            import_csv_instead_of_making=False,
+        )
+
     # Figure 1a
     make_heterozygosity_by_richness_stats_all_model_types_all_generations_one_parameter_set_scatter_plot(
         model_type_list=VALID_MODEL_TYPES,
