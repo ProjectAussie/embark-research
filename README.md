@@ -12,9 +12,9 @@ Repository of code used in Embark publications.
 
 To generate summary stats and build figures and tables (replicate data in manuscript)...
 ```py
-python analyze_data_and_make_figures_and_tables.py \
-    --output-root-directory {path_to_output_directory} \
-    --simulation-results-root-directory {path_to_unzipped_raw_data} \
+python analyze_data_and_make_figures_and_tables.py 
+    --output-root-directory {path_to_output_directory} 
+    --simulation-results-root-directory {path_to_unzipped_raw_data} 
     --get-data-from-results-files
 ```
 
